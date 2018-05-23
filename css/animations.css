@@ -1,5 +1,12 @@
 .hero,
 .avatar__shadow,
+.avatar__image {
+	opacity: 0;
+}
+
+
+.hero,
+.avatar__shadow,
 .avatar__image,
 .contact-box__name,
 .contact_box__profession,
@@ -57,8 +64,8 @@
     }
 }
 
-.avatar__image {
-    animation-name: picImage;
+.avatar.is-loaded .avatar__image {
+  	animation-name: picImage;
 }
 
 @keyframes picShadow {
@@ -72,8 +79,8 @@
     }
 }
 
-.avatar__shadow {
-    animation-name: picShadow;
+.avatar.is-loaded .avatar__shadow {
+  animation-name: picShadow;
 }
 
 @keyframes slideUp {
@@ -137,8 +144,12 @@
 }
 
 .hero {
-    animation-name: zoomOut;
-    animation-timing-function: ease-out;
+  	animation-timing-function: ease-out;
+}
+
+.hero.is-loaded {
+  	animation-delay: 1s;
+  	animation-name: zoomOut;
 }
 
 

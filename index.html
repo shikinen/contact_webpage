@@ -20,10 +20,10 @@
 </head>
 
 <body>
-    <div class="hero"></div>
+    <div id="hero" class="hero" data-image="images/warsaw.jpg"></div>
     <div class="contact-box">
         <aside class="contact-box__side">
-            <figure class="avatar">
+            <figure id="avatar" class="avatar">
                 <div class="avatar__shadow"></div>
                 <img id="avatarImage" class="avatar__image" src="images/arek.jpg" srcset="images/arek.jpg 1x,
                    images/arek@2x.jpg 2x,
@@ -57,4 +57,15 @@
             </ul>
         </main>
     </div>
+    <noscript>
+        <style type="text/css">
+        .wallpaper {
+            animation-name: zoomOut;
+        }
+
+        .picture {
+            animation-name: dropIn;
+        }
+        </style>
+    </noscript>
 </body>
