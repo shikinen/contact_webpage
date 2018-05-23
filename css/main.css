@@ -24,22 +24,27 @@ a {
 
 
 
+
 /* Background image */
 
+.avatar__shadow,
+.avatar__image,
 .hero {
     display: block;
     height: 100%;
     left: 0;
     top: 0;
     width: 100%;
+}
+
+
+.hero {
     background-image: url("../images/hero.jpg");
     background-position: center;
     background-size: cover;
     opacity: 0.2;
     position: fixed;
 }
-
-
 
 
 /* Contact box */
@@ -59,6 +64,26 @@ a {
     max-width: 26rem;
 }
 
+.contact-box__name {
+  font-size: 2.25rem;
+  line-height: 1.125;
+  margin-bottom: 0.5rem;
+}
+
+.avatar {
+  position: relative;
+}
+.avatar__shadow {
+  border-radius: 40192px;
+  background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 70%);
+  position: absolute;
+  top: 10%;
+}
+
+.avatar__image {
+  border-radius: 40192px;
+  position: relative;
+}
 
 
 /* 4. Responsiveness */
