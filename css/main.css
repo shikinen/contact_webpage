@@ -1,0 +1,32 @@
+/* Base styles */
+
+html {
+  background-color: #151425;
+  background-image: linear-gradient(to bottom right, #151425, #ffe479);
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  min-height: 100vh;
+  min-width: 300px;
+  overflow-x: hidden;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  color: currentColor;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Shared styles */
+
+.hero {
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
