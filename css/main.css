@@ -1,8 +1,8 @@
-/* Base styles */
+/* BASE STYLES */
 
 html {
     background-color: #151425;
-    background-image: linear-gradient(to bottom right, #000, #ff470f );
+    background-image: linear-gradient(to bottom right, #b30077, #ff470f);
     color: #fff;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
@@ -22,7 +22,10 @@ a {
     text-decoration: none;
 }
 
-/* Background image */
+
+
+
+/* SHARED STYLES */
 
 .avatar__shadow,
 .avatar__image,
@@ -34,9 +37,27 @@ a {
     width: 100%;
 }
 
+.contact-box__profession,
+.button {
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+.button,
+.social a {
+    transform-origin: center;
+    transition-duration: 100ms;
+}
+
+
+
+/* SPECIFIC STYLES */
+
+
+/* hero */
 
 .hero {
-    background-image: url("../images/hero.jpg");
+    background-image: url("../images/warsaw.jpg");
     background-position: center;
     background-size: cover;
     opacity: 0.2;
@@ -44,7 +65,9 @@ a {
 }
 
 
-/* Contact box */
+
+
+/* contact box */
 
 .contact-box {
     display: flex;
@@ -58,30 +81,85 @@ a {
 }
 
 .contact-box__about {
-    max-width: 26rem;
+    max-width: 27rem;
 }
 
 .contact-box__name {
-  font-family: 'Bitter', serif;
-  font-size: 2.25rem;
-  font-weight: 700;
-  line-height: 1.125;
-  margin-bottom: 0.5rem;
+    font-family: 'Bitter', serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.125;
+    margin-bottom: 0.5rem;
 }
 
-.avatar {
-  position: relative;
+.contact-box__profession {
+    color: #ffe479;
+    font-size: 0.75rem;
 }
+
+.hr {
+    background-image: linear-gradient(to right, #ff470f, #ffe479);
+    border: none;
+    content: "";
+    height: 1px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    transform-origin: center left;
+    width: 4rem;
+}
+
+.contact-box__description {
+    font-size: 1.5rem;
+}
+
+.contact-box__contact {
+    display: inline-block;
+    margin-top: 1.5rem;
+    vertical-align: top;
+}
+
+
+/* button */
+
+.button {
+    background-color: rgba(255, 71, 15, 0.1);
+    background-image: none;
+    border-image: linear-gradient(to right, #fd902f, #ffe479);
+    border-image-slice: 1;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 1px;
+    color: #ffe479;
+    display: inline-block;
+    font-size: 0.875rem;
+    line-height: 1;
+    padding: 1.25em 2em;
+}
+
+.button:hover {
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    transform: scale(1.02) translateY(-4px);
+}
+
+
+
+/* avatar */
+
+.avatar {
+    position: relative;
+    width: 100%
+}
+
 .avatar__shadow {
-  border-radius: 40192px;
-  background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 70%);
-  position: absolute;
-  top: 10%;
+    border-radius: 40192px;
+    background-image: radial-gradient(#000 0%, rgba(0, 0, 0, 0) 70%);
+    position: absolute;
+    top: 10%;
 }
 
 .avatar__image {
-  border-radius: 40192px;
-  position: relative;
+    border-radius: 40192px;
+    position: relative;
 }
 
 
@@ -95,8 +173,8 @@ a {
         padding: 5rem 3rem;
     }
     .contact-box__side {
-        margin-bottom: 3rem;
         width: 100%;
+        margin-bottom: 3rem;
     }
 }
 
