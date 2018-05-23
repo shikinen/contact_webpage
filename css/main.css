@@ -1,3 +1,23 @@
+/* FONTS */
+
+@font-face {
+    font-family: 'Bitter';
+    src: url('../fonts/bitter.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway.woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+
+
 /* BASE STYLES */
 
 html {
@@ -5,7 +25,6 @@ html {
     background-image: linear-gradient(to bottom right, #b30077, #ff470f);
     color: #fff;
     font-family: 'Raleway', sans-serif;
-    font-weight: 500;
     font-size: 16px;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
@@ -21,6 +40,10 @@ a {
     cursor: pointer;
     text-decoration: none;
 }
+
+
+
+
 
 
 
@@ -52,6 +75,10 @@ a {
 }
 
 
+
+
+
+
 /* SPECIFIC STYLES */
 
 
@@ -64,6 +91,10 @@ a {
     opacity: 0.2;
     position: fixed;
 }
+
+
+
+
 
 
 /* contact box */
@@ -86,7 +117,6 @@ a {
 .contact-box__name {
     font-family: 'Bitter', serif;
     font-size: 2.25rem;
-    font-weight: 700;
     line-height: 1.125;
     margin-bottom: 0.5rem;
 }
@@ -101,8 +131,7 @@ a {
     border: none;
     content: "";
     height: 1px;
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
+    margin: 1.5rem 0;
     transform-origin: center left;
     width: 4rem;
 }
@@ -116,6 +145,10 @@ a {
     margin-top: 1.5rem;
     vertical-align: top;
 }
+
+
+
+
 
 
 
@@ -150,38 +183,47 @@ a {
 }
 
 
+
+
+
+
 /* social */
 
 .contact-box__social {
     display: flex;
     margin-top: 1.5rem;
 }
+
 .contact-box__social li {
-  height: 1rem;
-  width: 1rem;
+    height: 1rem;
+    width: 1rem;
 }
 
 .contact-box__social a {
-  align-items: center;
-  display: flex;
-  font-size: 1.5rem;
-  height: 2rem;
-  justify-content: center;
-  opacity: 0.5;
-  transition-property: opacity, transform;
-  width: 2rem;
-  will-change: opacity, transform;
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    height: 2rem;
+    justify-content: center;
+    opacity: 0.5;
+    transition-property: opacity, transform;
+    width: 2rem;
+    will-change: opacity, transform;
 }
 
 .contact-box__social a:hover {
-  opacity: 1;
-  transform: scale(1.25);
+    opacity: 1;
+    transform: scale(1.25);
 }
 
 .contact-box__social a:active {
-  opacity: 1;
-  transform: scale(1.1);
+    opacity: 1;
+    transform: scale(1.1);
 }
+
+
+
+
 
 
 
@@ -204,6 +246,10 @@ a {
     border-radius: 40192px;
     position: relative;
 }
+
+
+
+
 
 
 

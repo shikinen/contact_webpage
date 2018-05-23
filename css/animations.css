@@ -1,0 +1,178 @@
+.hero,
+.avatar__shadow,
+.avatar__image,
+.contact-box__name,
+.contact_box__profession,
+.hr,
+.contact_box__description,
+.contact-box__contact,
+.contact-box__social li {
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
+    animation-fill-mode: both;
+}
+
+@keyframes bounceIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.contact-box__contact {
+    animation-name: bounceIn;
+}
+
+@keyframes fillUp {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.hr {
+    animation-name: fillUp;
+}
+
+.avatar__shadow,
+.avatar__image {
+    animation-duration: 750ms;
+    animation-timing-function: cubic-bezier(0, 0.5, 0.25, 1.25);
+}
+
+@keyframes picImage {
+    from {
+        opacity: 0;
+        transform: scale(1.2) translateY(-1rem);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.avatar__image {
+    animation-name: picImage;
+}
+
+@keyframes picShadow {
+    from {
+        opacity: 0;
+        transform: scale(1.2) translateY(4rem);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1.1) translateY(0);
+    }
+}
+
+.avatar__shadow {
+    animation-name: picShadow;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-box__name {
+    animation-name: slideDown;
+}
+
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-box__profession,
+.contact-box__description {
+    animation-name: slideUp;
+}
+
+.social li {
+    animation-duration: 0.3ms;
+    animation-name: slideUp;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1.5);
+}
+
+@keyframes zoomOut {
+    from {
+        opacity: 0;
+        transform: scale(1.05);
+    }
+    to {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+}
+
+.hero {
+    animation-name: zoomOut;
+    animation-timing-function: ease-out;
+}
+
+
+
+/* ANIMATION DELAYS */
+
+.contact-box__name {
+    animation-delay: 100ms;
+}
+
+.contac-box__profession {
+    animation-delay: 200ms;
+}
+
+.hr {
+    animation-delay: 300ms;
+}
+
+.contact-box__description {
+    animation-delay: 400ms;
+}
+
+.avatar__image {
+    animation-delay: 500ms;
+}
+
+.avatar__shadow {
+    animation-delay: 500ms;
+}
+
+.contact-box__contact {
+    animation-delay: 600ms;
+}
+
+.social li:nth-child(1) {
+    animation-delay: 2000ms;
+}
