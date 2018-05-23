@@ -25,6 +25,8 @@ a {
 
 
 
+
+
 /* SHARED STYLES */
 
 .avatar__shadow,
@@ -44,11 +46,10 @@ a {
 }
 
 .button,
-.social a {
+.contact-box__social a {
     transform-origin: center;
-    transition-duration: 100ms;
+    transition-duration: 0.3s;
 }
-
 
 
 /* SPECIFIC STYLES */
@@ -63,8 +64,6 @@ a {
     opacity: 0.2;
     position: fixed;
 }
-
-
 
 
 /* contact box */
@@ -119,6 +118,8 @@ a {
 }
 
 
+
+
 /* button */
 
 .button {
@@ -135,7 +136,6 @@ a {
     font-weight: 700;
     line-height: 1;
     padding: 1.25em 2em;
-    transition: all 0.2s ease-in-out;
 }
 
 .button:hover {
@@ -144,6 +144,45 @@ a {
     color: #fff;
     transform: scale(1.05) translateY(-4px);
 }
+
+.button:active {
+    transform: scale(0.98) translateY(-2px);
+}
+
+
+/* social */
+
+.contact-box__social {
+    display: flex;
+    margin-top: 1.5rem;
+}
+.contact-box__social li {
+  height: 1rem;
+  width: 1rem;
+}
+
+.contact-box__social a {
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+  height: 2rem;
+  justify-content: center;
+  opacity: 0.5;
+  transition-property: opacity, transform;
+  width: 2rem;
+  will-change: opacity, transform;
+}
+
+.contact-box__social a:hover {
+  opacity: 1;
+  transform: scale(1.25);
+}
+
+.contact-box__social a:active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
 
 
 
@@ -165,6 +204,8 @@ a {
     border-radius: 40192px;
     position: relative;
 }
+
+
 
 
 /* 4. Responsiveness */
